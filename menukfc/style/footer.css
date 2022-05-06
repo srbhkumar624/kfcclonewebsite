@@ -1,0 +1,54 @@
+*{
+    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>a,p,ul{
+    color: white;
+}
+img,a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+#footer{
+    width:85%;
+    height: 500px;
+    border:1px solid red;
+    margin:auto;
+    color:white;
+    background-color: rgb(34, 31, 38);
+    padding:50px;
+}
+#offersanddeals{
+    display: flex;
+    height: 100px;
+    width: 70%;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    /* border:1px solid teal; */
+    margin:auto
+}
+#allsection{
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    line-height: 30px;
+    padding: 100px 0px 100px 0px;
+}
+#location{
+    color:red;
+    cursor: pointer;
+}
+#end{
+    display: flex;
+    width: 50%;
+    margin:auto;
+    justify-content: space-between;
+}
+#social{
+    justify-content: end;
+}

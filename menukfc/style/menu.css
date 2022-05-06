@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    min-height: 100vh;
+}
+#header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#match_day {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    background-color: #f8f7f5;
+
+}
+
+#match_day div {
+    padding-left: 30px;
+    padding-top: 50px;
+    line-height: 15px;
+}
+
+#chicken_bucket,
+#biryani_bucket,
+#box_meal,
+#burger,
+#stay_home,
+#snaks,
+#beverages {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    line-height: 15px;
+}
+
+#chicken_bucket div,
+#biryani_bucket div,
+#box_meal div,
+#burger div,
+#stay_home div,
+#snaks div,
+#beverages div {
+    padding-left: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 450px;
+}
+
+#left {
+    width: 20%;
+    position: fixed;
+    margin-right: 10px;
+}
+
+#right {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 300px;
+
+}
+
+.Button {
+    color: white;
+    background-color: red;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+#image {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.Rimage {
+    width: 100%;
+    height: 200px;
+    display: block;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* p:hover {
+    cursor: pointer;
+} */
+h3 {
+    font-weight: bold;
+}
+
+#pri {
+    font-weight: bold;
+}
+
+.Button:hover {
+    background-color: rgb(130, 8, 8)
+}
+
+.Button:active {
+    background-color: rgb(130, 8, 8);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#left p:hover {
+    font-weight: bold;
+}
+
+#left p {
+    font-size: medium;
+    line-height: 28px;
+    color: black;
+}
+#match_day div p,
+#chicken_bucket div p,
+#biryani_bucket div p,
+#box_meal div p,
+#burger div p,
+#stay_home div p,
+#snaks div p,
+#beverages div p
+ {
+     color: black;}
+     #start_order{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 70px;
+        background-color: #202124;
+        color: white;        
+}
+#lets{
+        margin-top: 20px;
+         margin-left: 600px;
+}
+#btn_red{
+    cursor: pointer;
+        margin-top: 10px;
+        background-color: #e4002b;
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+}

@@ -1,7 +1,7 @@
 function navbar(){
     return `<div id="menuSection">
     <div><img src="./images/kfcLogo.492728c6.svg"></div>
-    <div><a href="#">Menu</a></div>
+    <div><a href="./menukfc/menu.html">Menu</a></div>
     <div><a href="#">Deals</a></div>
 </div>
 <div id="accountSection">

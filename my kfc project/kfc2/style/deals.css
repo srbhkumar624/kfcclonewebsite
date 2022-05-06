@@ -1,0 +1,392 @@
+#navbar{
+    width: 100%;
+    height:100px;
+    border: 1px solid red;
+}
+#deals1{
+    width: 100%;
+    height:50px;
+    border: 1px solid black;
+    background-color: #202124;
+}
+#order{
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    width: 36%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #202124;
+}
+button{
+    
+    margin-top: 10px;
+   border-radius: 25px;
+   height: 35px;
+   width: 100px;
+   background-color: 
+   #e4002b;
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-family: Oswald;
+}
+#pop{
+    display: block;
+}
+h5{
+    color: white;
+    font-size: 14px;
+    font-family: Oswald;
+    margin-top: 18px;
+}
+button:hover{
+    background-color: #f50632;
+}
+#deals2{
+    width: 100%;
+    height: 250px;
+    margin-top: 0%;
+    border: 1px solid #4c1a18;
+    line-height: 168px;
+    background-image: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
+
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: Oswald;
+}
+#deals3{
+    /* border: 1px solid green; */
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15%;
+}
+#deals3>div{
+    width: 10%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: #f50632 ;
+}
+#deals4{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.ancher{
+    color: black;
+    margin-top: 25px;
+    font-size: 13px;
+    font-family: Oswald;
+}
+#dealsoffer{
+    width: 90%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+#deals5{
+    height: 300px;
+    width: 45%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+#deals6{
+    height:290px ;
+    margin-right: 140px;
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#offer{
+    height: 59%;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    background-image: url("https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/CHKZINGER.jpg");
+    background-size: 190px 200px;
+}
+#h1_1{
+    color: #e4002b;
+    font-size: 20px;
+}
+#p_1{
+    color: #353947;
+    margin-top: -3px;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px;
+}
+#deals6_1{
+    justify-content: space-evenly;
+    margin-top: -19px;
+    display: flex;
+}
+#view{
+    color: #202124;
+    font-size: 13px;
+}
+#ree{
+   width: 70px;
+   background-color: #f8f7f5;
+   border:1px solid black;
+   color: #202124;
+}
+#ree:hover{
+    background-color: #202124;
+    color: #f8f7f5;
+}
+
+
+#deals5>div{
+    width: 47%;
+    height: 95%;
+    /* border: 1px solid green; */
+    border-radius: 10px;
+}
+#deals5_1{
+    background-image: url("https://online.kfc.co.in/static/media/Native_select%20a%20kfc_grey%20image.6e97ff02.svg");
+    background-size: 230px 295px;
+    background-color: #202124;
+}
+#deals5_2{
+    background-color: #e4002b;
+}
+h2{
+font-size: 21px;
+/* padding: 5px; */
+margin-top: 120px;
+color: white;
+text-align: center;
+font-family: Oswald;
+
+}
+#btn1{
+    border: 2px solid white;
+    background-color: #202124;
+    display: block;
+   margin: auto;
+}
+#h2{
+    color: black;
+    margin-top: 20px;
+}
+#btn1:hover{
+    background-color: white;
+    color: #202124;
+}
+#btn2{
+    border: 2px solid white;
+    
+    display: block;
+    margin: auto;
+}
+.btn2a:hover{
+    background-color: white;
+    color:#202124;
+   
+}
+#h2_1{
+    margin-top: 58px;
+    font-family: Oswald;
+}
+.btn2a{
+    color: white;
+    text-decoration: none;
+    font-family: Oswald;
+}
+#btn2:hover{
+    background-color: white;
+    color:#202124;
+}
+/* popop part */
+#popop{
+    display: none;
+    border: 1px solid #f8f7f5;
+   
+    background-color: white;
+    width: 50%;
+    position: sticky;
+    margin: auto;
+    height: 400px;
+    z-index: 10000;
+   
+  /* margin-top: 500px; */
+    top: 0;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    
+    font-family: Oswald;
+}
+/* popbutton */
+.btnpop{
+    display: block;  /*1*/
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: #f8f7f5 ;
+    color: black;
+    width: 30%;
+    font-family: Oswald;
+   
+}
+#popop1{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 18%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    background-color: 
+    #ffffff;
+    border-radius: 10px;
+}
+#popop2{
+   background-color: #f8f7f5;
+   height: 82%;
+   width: 100%;
+}
+.btnpop:hover{
+    background-color: #f8f7f5 ;
+}
+#btncancel,#btncancel1{
+    display: block;
+    margin: auto;
+    margin-right: 6px;
+   
+    background-color: white;
+    color: #202124;
+}
+#btncancel:hover{
+    background-color: #f8f7f5;
+}
+h4{
+    text-align: center;
+    margin-left: 23%;
+    font-family: Oswald;
+}
+#h4{
+    text-align: center; 
+    margin-left: 35%;
+    font-family: Oswald;
+}
+#map{
+    /* display: none; */
+    /* opacity: 0; */
+    /* border: 1px solid red; */
+    overflow-y: scroll;
+   
+    background-color: white;
+    width: 50%;
+    position: sticky;
+    margin: auto;
+    height: 400px;
+    z-index: 10000;
+   
+  /* margin-top: 500px; */
+    top: 0;
+    border-radius: 5px;
+    font-family: Oswald;
+}
+#map1{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    border-bottom: 1px solid grey;
+}
+#map2{
+    
+    background-color: #f8f7f5;
+    height: 82%;
+    width: 100%;
+
+}
+#map2-1,#map2-3{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    font-family: Oswald;
+    /* background-color: #202124; */
+
+}
+.head{
+    color:#202124;
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+#map2-2{
+    display: flex;
+   
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+
+    width: 80%;
+    height: 30px;
+}
+hr{
+    width: 80%;
+    margin-top: 30px;
+}
+#Para1{
+    font-size: 12px;
+    color:red;
+}
+/* inputcss */
+input{
+    width: 399px;
+    display: block;
+    margin: auto;
+    margin-right: 0%;
+    margin-top: 5px;
+    
+
+}
+#maplogo{
+    width: 7%;
+    height: 100%;
+    background-image: url("https://online.kfc.co.in/static/media/GoogleMapLocation.c86d640b.svg");
+    background-size: 28px 30px;
+}
+
+#btnprevies{
+   
+    background-color: white;
+    color: #202124;
+}
+/* button location css */
+#btnlocation{
+    background-color: #f8f7f5;
+    color: #202124;
+    font-size: 10px;
+    margin-top: 1px;
+}
+#caintaner{
+    margin-top: -170px;
+    /* border: 1px solid red; */
+    width: 100%;
+    overflow: scroll;
+}
+
+
+

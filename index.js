@@ -8,3 +8,5 @@ nav.innerHTML=navbar();
 let fot = document.getElementById("footer");
 
 fot.innerHTML=footer();
+
+

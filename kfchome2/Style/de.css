@@ -1,0 +1,226 @@
+#container {
+    display: flex;
+    /* opacity: 0; */
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#tt{
+    color: white;
+    margin-top: 40px;
+}
+
+#tt1{
+    color: white;
+    margin-top: 40px;
+}
+
+#tt2{
+    color: white;
+    margin-top: 40px;
+}
+#tt3{
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#box {
+    /* margin-left: 40px; */
+    width: 300px;
+    background-color: black;
+    height: 70%;
+    /* padding-top: 30px; */
+    padding-bottom: 50px;
+    border-radius: 10px;
+    margin-left: 90px;
+    /* pointer-events: none; */
+}
+#box h1 {
+    color: white;
+}
+#buter {
+    margin-top: 30px;
+}
+#setting {
+    margin-left: 40px;
+    width: 300px;
+    /* pointer-events: none; */
+}
+
+
+#order {
+    display: flex;
+     margin-left:80px;
+     margin-top: 50px;
+}
+
+#looking {
+    margin-left: 400px;
+}
+
+#ob {
+ border: 1 px solid black;
+ height: 20px;
+ border-radius: 30px;
+ margin-top: 15px;
+ margin-left: 10px;
+}
+
+
+#noo{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#viewm{
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    margin-left: 100px;
+}
+.utkarsh hr {
+    margin-left: 100px;
+}
+
+#he{
+    display: flex;
+    margin-left: 100px;
+    gap: 500px;
+}
+
+#meet {
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+.utkarsh {
+    opacity: 1;
+    /* position: fixed; */
+    /* float: left; */
+    /* display: none; */
+    margin-left: 10px;
+    /* width: 100%; */
+}
+.utkarsh.show {
+    opacity: 0;
+    display: none;
+}
+
+
+
+#hist {
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+#brow {
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+
+
+.oc {
+    margin-left: 100px;
+    margin-top: 40px;
+    /* display: none; */
+    opacity: 0;
+}
+
+.oc.show {
+    margin-left: 100px;
+    /* margin-top: 40px; */
+    opacity: 1;
+    position:relative;
+}
+
+
+#fav {
+    margin-top: 0px;
+}
+
+.address {
+    margin-left: 100px;
+    margin-top: 50px;
+    opacity: 0;
+    /* display: none; */
+    position:relative;
+}
+
+
+
+.address.show {
+    /* margin-left: 100px; */
+    margin-top: 50px;
+    opacity: 1;
+    position:relative;
+}
+
+#add {
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+.final {
+    opacity: 0;
+}
+.final.show {
+    opacity: 1;
+}
+
+
+#preloader {
+    background: white url(https://online.kfc.co.in/KFC_Loader_Gif.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.final p {
+    color: black;
+}

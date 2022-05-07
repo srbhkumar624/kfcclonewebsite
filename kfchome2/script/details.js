@@ -1,0 +1,81 @@
+import { navbar,footer } from "../components/main.js";
+let navbar1 = document.getElementById("navbar");
+navbar1.innerHTML = navbar();
+
+
+
+let footer1 = document.getElementById("footer");
+footer1.innerHTML = footer();
+
+
+
+
+
+
+
+
+
+
+
+
+let tt = document.getElementById("tt");
+let utkarsh = document.getElementById("utkarsh");
+let oc = document.getElementById("oc")
+let add1 = document.getElementById("address")
+tt.addEventListener("click", ()=>{
+    // utkarsh.classList.add("show")
+})
+
+
+
+
+
+let ttl1 = document.getElementById("tt1");
+ttl1.addEventListener("click", ()=>{
+    utkarsh.classList.add("show")
+    oc.classList.add("show")
+    add1.classList.remove("show")
+    final.classList.remove("show")
+
+})
+
+let ttl2 = document.getElementById("tt2");
+ttl2.addEventListener("click", ()=>{
+    oc.classList.remove("show")
+    add1.classList.add("show")
+    utkarsh.classList.add("show")
+    final.classList.remove("show")
+})
+
+let final = document.getElementById("final")
+let tt3 = document.getElementById("tt3");
+tt3.addEventListener("click", ()=>{
+    utkarsh.classList.add("show");
+    add1.classList.remove("show")
+    final.classList.add("show")
+    oc.classList.remove("show")
+})
+
+
+
+tt.addEventListener("click",()=>{
+    window.location = ("details.html")
+})
+
+
+
+
+
+
+
+let loader = document.getElementById("preloader")
+window.addEventListener("load", ()=>{
+    loader.style.display = "none";
+})
+
+
+let ram = document.getElementById("ram")
+
+ram.addEventListener("click", ()=>{
+    window.location =("index1.html")
+})

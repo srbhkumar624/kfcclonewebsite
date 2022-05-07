@@ -334,23 +334,27 @@
     //-----------------------------------------------PRice Section--------------------------------------------------------------main script
     var add_to_cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 
-    var nos = add_to_cart.length;
-    document.querySelector("thead").textContent = `${nos} ITEM`
+var nos = add_to_cart.length;
+document.querySelector("thead").textContent = `${nos} ITEM`
 
-    var subtotal = add_to_cart.reduce(function (ac, el) {
-        return ac + Number(el.price);
-    }, 0);
-    document.querySelector(".subtotal").textContent = ` ₹ ${subtotal.toFixed(2)}`
+var subtotal = add_to_cart.reduce(function (ac, el) {
+    let x=el.price.split("₹");
+    let currentPrice=+x[1];
+    return ac + currentPrice;
+}, 0);
+document.querySelector(".subtotal").textContent = ` ₹ ${subtotal.toFixed(2)}`
 
-    var tax = subtotal * (0.12);
-    document.querySelector(".tax").textContent = `₹ ${tax.toFixed(2)}`
+var tax = subtotal * (0.12);
+document.querySelector(".tax").textContent = `₹ ${tax.toFixed(2)}`
 
-    var estimated = tax + subtotal;
-    document.querySelector(".estimated").textContent = `₹ ${estimated.toFixed(2)}`
+var estimated = tax + subtotal
+// console.log(estimated);
+document.querySelector(".estimated").textContent = `₹ ${estimated.toFixed(2)}`
 
-    document.querySelector(".paybutton").value = `Pay ₹${estimated.toFixed(2)}`
-    // localStorage.setItem("KFCtotalprice", estimated);
+document.querySelector(".paybutton").value = `Pay ₹${estimated.toFixed(2)}`
+// localStorage.setItem("KFCtotalprice", estimated);
 
+  
     //-----------------------------------------------//Price Section Ends----------------------------------------------------------------------------
 
     document.querySelector("#paymentinfo").addEventListener("submit", myFunction)

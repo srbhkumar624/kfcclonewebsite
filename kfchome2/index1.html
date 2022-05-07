@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style/index.css" rel="stylesheet">
+    <link href="Style/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/footer.css">
+     <!-- <link rel="shotcut icon" href="" type="image/x-con"> -->
+     <link rel="icon" href="https://online.kfc.co.in/favicon.ico">
+     <title>KFC | Order KFC Chicken Online &amp; Find Restaurants</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div id="navbar">
+
+    </div>
+   
+    <div id="far">
+    </div>
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <div >
+            <div id="super">
+                <button id="backd"><</button>
+            <h2 id="h2"> CHANGE YOUR ORDER</h2>
+            <button id="cross">X</button>
+            </div>
+            </div>
+            <label id="label">ORDER TYPE</label>
+            <div id="pick">
+             <p id="cot"></p>
+             <button id="edit1">Edit</button>
+             </div>
+             <hr>
+             <!-- <hr id="hr"> -->
+             <label id="label">YOUR KFC RESTAURANT</label>
+             <div id="pick">
+              <p id="cot1"></p>
+              <!-- <hr id="hr"> -->
+              <button id="edit2">Edit</button>
+              </div>
+              <hr>
+              <!-- <hr id="hr"> -->
+              <!-- <label id="label">SCHEDULE FOR YOUR ORDER</label>
+              <div id="pick">
+               <p>Pick Up</p>
+               <select  id="sel">
+                   <option>Today</option>
+                   <option>Yesterday</option>
+               </select>
+               <button>Submit</button> -->
+               </div>
+               <hr>
+
+        </div>
+    </div>
+
+
+    <div class="modal-containerr" id="modal_containerr">
+        <div class="modal">
+            <div >
+            <div id="super">
+                <button id="nepw"><</button>
+            <h2 id="h2">SELECT A KFC</h2>
+            <button id="cross1">X</button>
+            </div>
+            </div>
+            <form onsubmit="getdata(event)" id="form1" >
+                <input type="text" id="city" placeholder="city name">
+                <input type="submit" value="Search">
+            </form>
+            <div id="container">
+             </div>
+             <div class="mapouter">
+                <div class="gmap_canvas">
+              <iframe width="600" 
+              height="500"
+               id="gmap_canvas" 
+               frameborder="0" 
+               scrolling="no" 
+               marginheight="0"
+                marginwidth="0">
+              </iframe>
+              </div>
+
+
+
+               </div>
+               <hr>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-containerrr" id="modal_containerrr">
+        <div class="modal">
+            <div >
+            <div id="super">
+                <button><</button>
+            <h2 id="h2">START YOUR ORDER</h2>
+            <button id="cross11">X</button>
+            </div>
+            </div>
+            <div id="clo">
+                <h2>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</h2>
+                <div id="pickin">
+                   <h3>Pick Up</h3>
+                </div>
+                <div id="pickin1">
+                    <h3>Dive In</h3>
+                 </div>
+                 <div id="pickin2">
+                    <h3>Delivery</h3>
+                 </div>
+                </div>
+               </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="pil">
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/E2WVSq4FOeSCRAGy6LZZa/11c68fb3611baabb79e0ae892338098d/3_Strips.png">
+</div>
+
+<div id="selectyour">
+    SELECT YOUR ORDER TYPE TO START
+</div>
+<div id="dine">
+    <h3 id="de" class="de">Delivery</h3>
+    <h3 id="pi" class="pi">Pick Up</h3>
+    <h3 id="di" class="di">Dive In</h3>
+</div>
+<br>
+<br>
+<br>
+<div id="images">
+
+</div>
+
+<div id="ca">
+    <h1>BROWSE CATEGORIES</h1>
+    <hr>
+</div>
+<div id="grid">
+
+</div>
+
+
+<div id="footer">
+
+</div>
+
+</body>
+<script src="script/index.js" type="module"></script>
+
+</html>

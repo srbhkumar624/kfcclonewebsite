@@ -861,6 +861,12 @@ document.getElementById("beve").addEventListener("click", function () {
 function divRedirect7() {
     window.location = "#beverages";
 }
+document.getElementById("bucket").addEventListener("click",function(){
+    bucketRedirect();
+})
+function bucketRedirect(){
+    window.location="cart.html";
+}
 
 
 

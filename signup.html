@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC SIGN IN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poly&display=swap" rel="stylesheet">
+<!-- <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet"> -->
+</head>
+<style>
+    #container
+    {
+        text-align: center;
+        /* border: 1px solid red; */
+        width: 38%;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .signup
+    {
+        font-family: 'Lato', sans-serif;
+        /* font-family: 'Poly', serif; */
+        color: #535353;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .image
+    {
+        /* border: 1px solid blue; */
+        margin-top: 30px;
+    }
+
+    .matter
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-size: 22px;
+        color: #202124;
+        margin-top: 35px;
+    }
+
+    .number
+    {
+        width: 98.5%;
+        margin-top: 60px;
+        border: none;
+        border-bottom: 1px solid black;
+        height: 20px;
+    }
+
+    ::placeholder
+    {
+        color: #202124;
+        font-size: 13px;
+    }
+
+    .sub
+    {
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px;
+        color: #3e4148;
+        margin-left: -110px;
+    }
+
+    #input
+    {
+        margin: auto;
+        /* border: 1px solid blue; */
+        width: 98%;
+        /* text-align: left; */
+    }
+
+    .code
+    {
+        width: 32%;
+        height: 47px;
+        border-radius: 30px;
+        /* font: arial; */
+        background-color: #202124;
+        color: white;
+        border: none;
+        /* margin: auto; */
+        margin-top: 20px;
+    }
+
+    .guest
+    {
+        width: 98%;
+        margin: auto;
+        height: 50px;
+        border-radius: 30px;
+        font-weight: bold;
+        color: #202124;
+        border: 1.5px solid #202124;
+        background-color: white;
+        margin-top: 15px;
+    }
+
+    .or
+    {
+        margin-top: 30px;
+        color: #202124;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+</style>
+<body>
+    <div id="container">
+
+        <p class="signup">Sign In / Sign up</p>
+
+        <img class="image" src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/KFC_logo.svg" alt="">
+
+        <p class="matter">LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</p>
+
+        <div id="input">
+            
+            <input class="number" type="number" placeholder="Phone Number">
+
+            <p class="sub">By “logging in to KFC”, you agree to our <b>Privacy Policy</b> and <b>Terms & Conditions.</b></p>
+
+            <input type="submit" class="code" value="Send Me a Code">
+
+            <p class="or">or</p>
+
+            <input type="submit" class="guest" value="Skip, Continue As Guest">
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+<script>
+    document.querySelector(".code").addEventListener("click",go2);
+    
+    function go2()
+    {   
+        var number = document.querySelector(".number").value;
+        localStorage.setItem("number",JSON.stringify(number));
+        document.querySelector(".number").value=null;
+        window.location.href = "signup2.html"; 
+    }
+</script>

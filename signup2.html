@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC OTP VERIFICATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poly&display=swap" rel="stylesheet">
+<!-- <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet"> -->
+</head>
+<style>
+    #container
+    {
+        text-align: center;
+        /* border: 1px solid red; */
+        width: 38%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .signup
+    {
+        font-family: 'Lato', sans-serif;
+        /* font-family: 'Poly', serif; */
+        color: #535353;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .image
+    {
+        /* border: 1px solid blue; */
+        margin-top: 30px;
+    }
+
+    .matter
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-size: 22px;
+        color: #202124;
+        margin-top: 35px;
+    }
+
+    .sub
+    {
+        font-family: 'Poly', sans-serif;
+        /* font-family: 'Poly', serif; */
+        color: #272727;
+        /* font-weight: bold; */
+        font-size: 14.5px;
+        margin-top: 35px;
+        padding-bottom: 6px;
+    }
+
+    
+
+    .a1, .a2
+    {
+        text-decoration: none;
+        color: #4f4f4f;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .enter_code
+    {
+        margin-top: 26px;
+        width: 18%;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid #626262;
+    }
+
+    .sub2{
+        font-family: 'Poly', sans-serif;
+        /* font-family: 'Poly', serif; */
+        color: #5c5c5c;
+        /* font-weight: bold; */
+        font-size: 14.5px;
+        /* margin-top: 25px; */
+        padding-bottom: 6px;
+        margin-top: 18px;
+    }
+
+    #submit
+    {
+        margin-top: 45px;
+        width: 25%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: #dbdbdb;
+    }
+
+    #otp
+    {
+        display: flex;
+        margin: auto;
+        /* border: 1px solid blue; */
+        width: 40%;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <div id="container">
+
+        <p class="signup">Sign In / Sign up</p>
+
+        <img class="image" src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/KFC_logo.svg" alt="">
+
+        <p class="matter">WE JUST TEXTED YOU</p>
+
+        <p class="sub">Please enter the verification code we just sent to <b class="mobile"></b></p>
+
+        <a href="" class="a1">Different Number?</a>
+        <br>
+
+        <div id="otp">
+            <input type="text" class="enter_code code1">
+            <input type="text" class="enter_code code2">
+            <input type="text" class="enter_code code3">
+            <input type="text" class="enter_code code4">
+        </div>
+
+        <p class="sub2"><b class="timer"></b></p>
+
+        <a href="" class="a2">Resend the Code</a>
+        <br>
+
+        <button id="submit">Submit</button>
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    let number = JSON.parse(localStorage.getItem("number"));
+    document.querySelector(".mobile").innerText = number;
+
+
+    let p = document.createElement("p");
+    var i=178;
+    setInterval(function(){
+        if(i<0)
+        {
+            p.innerText=`Your code has expired!`;
+            p.style.color = "orangered";
+        }
+        else
+        {
+            p.innerText=`Your code will expire in 0:${i}sec`;
+            document.querySelector(".timer").append(p);
+        }
+        i--; 
+    },1000)
+    
+
+
+    document.querySelector("#submit").addEventListener("click",signup3);
+    function signup3()
+    {
+        window.location.href = "popup.html";
+    }
+    
+</script>

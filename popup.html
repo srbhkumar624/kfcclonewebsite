@@ -219,17 +219,26 @@
 <script>
     document.querySelector(".submit").addEventListener("click",submit);
 
+    let arr = [];
+
     function submit()
     {
+        let number = JSON.parse(localStorage.getItem("number"));
         var name = document.querySelector(".name").value;
-        console.log(name)
-        localStorage.setItem("name",JSON.stringify(name));
-        document.querySelector(".name").value = null;
-        document.querySelector(".email").value = null;
-        modal.style.display = "block";
-        document.getElementById("container").innerHTML=null;
-    }
-
+        let email = document.querySelector(".email").value;
+        let obj = {
+            number : number,
+            name : name,
+            email : email
+        };
+    console.log(obj);
+    arr.push(obj);
+    localStorage.setItem("details",JSON.stringify(arr));
+    document.querySelector(".name").value = null;
+    document.querySelector(".email").value = null;
+    modal.style.display = "block";
+    document.getElementById("container").innerHTML=null;
+}
 
     document.querySelector(".okay").addEventListener("click",home);
     function home(){

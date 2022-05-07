@@ -6,7 +6,7 @@ function navbar(){
 </div>
 <div id="accountSection">
     <div><a><img src="./images/Account_Icon.svg"></a></div>
-    <div><a>Sign In</a></div>
+    <div><a href="../signup.html">Sign In</a></div>
     <div class="vl"></div>
     <div><P id="rupee">&#x20b9; 0</P></div>
     <div id="bucket"><p id="noOfItem">0</p></div>

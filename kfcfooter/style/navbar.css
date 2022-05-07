@@ -1,0 +1,53 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    cursor:pointer
+}
+#navbar{
+    height:100px;
+    width: 100%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+#menuSection{
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+#menuSection a{
+    text-decoration: none;
+    color:black;
+}
+#accountSection a{
+    text-decoration: none;
+    color:black;
+}
+#accountSection{
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    cursor:pointer;
+    color:black
+}
+.vl{
+    border-left: 1px solid black;
+    height: 30px;
+}
+#bucket{
+    background-image:url(../images/bucket_cart_icon.svg) ;
+    height:50px;
+    width:50px;
+}
+#rupee{
+    color:black;
+}
+#noOfItem{
+    padding-left: 20px;
+    color:black
+}

@@ -79,3 +79,9 @@ let ram = document.getElementById("ram")
 ram.addEventListener("click", ()=>{
     window.location =("index1.html")
 })
+
+let swa=document.getElementById("buter");
+
+swa.addEventListener("click", ()=>{
+    window.location =("../index.html")
+});

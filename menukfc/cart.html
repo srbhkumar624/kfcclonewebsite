@@ -353,7 +353,7 @@ document.querySelector(".estimated").textContent = `₹ ${estimated.toFixed(2)}`
 
 document.querySelector(".paybutton").value = `Pay ₹${estimated.toFixed(2)}`
 // localStorage.setItem("KFCtotalprice", estimated);
-
+//updated data of the cart
   
     //-----------------------------------------------//Price Section Ends----------------------------------------------------------------------------
 
@@ -366,9 +366,9 @@ document.querySelector(".paybutton").value = `Pay ₹${estimated.toFixed(2)}`
         var cvv = document.querySelector("#cvv").value;
         // console.log(nameoncard,card,cvv,exp)
         localStorage.setItem("finalpayable", estimated);
-        if ((nameoncard == "huzaifa"||nameoncard == "shashank"||nameoncard =="satish" ||nameoncard =="neha" ||nameoncard =="mayuri" ||nameoncard ==  "mohit")&& card == 123456789 && cvv == 123 && exp == "12/24") {
-            console.log("success")
-            window.location.href = "otp.html";
+        if ((nameoncard == "masai"||nameoncard == "saurabh"||nameoncard =="kratika" ||nameoncard =="utkarsh" ||nameoncard =="kundan" ||nameoncard ==  "swapnil"||nameoncard=="rajibul")&& card == 123456789 && cvv == 123 && exp == "05/28") {
+            alert("Order Sucessful");
+            window.location.href = "../index.html";
             alert(`Total payable is ${val.toFixed(2)}`)
         }
         else {

@@ -107,3 +107,16 @@ function display(data) {
       wetherlocation(crd.latitude, crd.longitude);
     }
   }
+//   bucket Section
+let bucket=JSON.parse(localStorage.getItem("addToCart")) || [];
+bucket.map(function(el){
+    let x=el.price.split("₹");
+    let currentPrice=+x[1];
+    let z=document.getElementById("rupee").innerText.split("₹");
+    let previousPrice=+z[1];
+    let total=(previousPrice+currentPrice).toString();
+    console.log(total);
+    document.getElementById("noOfItem").innerText=bucket.length; 
+    document.getElementById("rupee").innerText=`₹${total}`;
+})
+    

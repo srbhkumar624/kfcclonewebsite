@@ -7,6 +7,11 @@ navbar1.innerHTML = navbar();
 let footer1 = document.getElementById("footer");
 footer1.innerHTML = footer();
 
+let chuk  = JSON.parse(localStorage.getItem("order")) || []
+
+
+
+
 
 let details = JSON.parse(localStorage.getItem("details")) || []
 
@@ -102,8 +107,11 @@ let swa=document.getElementById("buter");
 
 swa.addEventListener("click", ()=>{
     window.location =("../index.html")
-    localStorage.remove("details")
+  localStorage.removeItem("details");
+  localStorage.removeItem("order");
+
 });
+
 // bucket section
 let bucket=JSON.parse(localStorage.getItem("addToCart")) || [];
 bucket.map(function(el){

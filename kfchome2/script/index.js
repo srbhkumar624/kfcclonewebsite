@@ -203,12 +203,14 @@ check.append(divy)
 
 
 
-
-
-
-
-
-
+let checkonly = document.getElementById("gdata");
+let valued
+checkonly.addEventListener("click", ()=>
+{
+    valued = document.getElementById("city").value;
+    sitsata(valued)
+    
+})
 
 
 
@@ -218,12 +220,10 @@ check.append(divy)
 
 
 // Weather just checking only
-function getdata(e){
-    e.preventDefault();
-let form = document.getElementById("form1");
-let city = form.city.value;
-
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${form.city.value}&appid=b575f5026abe2051e67ce2e7f2c9090a`;
+function sitsata(e){
+var valuec = e;
+console.log(valuec)
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${valuec}&appid=b575f5026abe2051e67ce2e7f2c9090a`;
 
 fetch(url).then(function(res)
 {
@@ -246,6 +246,7 @@ function append(dat1)
     let divw = document.getElementById("container")
     let gmap = document.getElementById("gmap_canvas")
     let name1 = document.createElement("p")
+    name1.setAttribute("class", "abd")
     name1.innerText = `City ${dat1.name}`
     let buttu = document.createElement("button")
     buttu.innerText = `Add ${dat1.name} For Kfc`

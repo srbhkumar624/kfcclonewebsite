@@ -372,6 +372,8 @@
             alert("Order Sucessful");
             window.location.href = "../kfchome2/index1.html";
             alert(`Total payable is ${val.toFixed(2)}`)
+            localStorage.removeItem("addtoCart");
+            //   localStorage.removeItem("order");
         }
         else {
             alert("Invalid Details")

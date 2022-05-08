@@ -8,13 +8,31 @@ let footer1 = document.getElementById("footer");
 footer1.innerHTML = footer();
 
 
+let details = JSON.parse(localStorage.getItem("details")) || []
+
+let superman = "";
+let email = "";
+let mobilenum = ""
+details.map(function(el)
+{
+  superman = el.name
+  email = el.email;
+  mobilenum = el.number;
+})
 
 
 
+let goodm = document.getElementById("goodm")
+goodm.innerText = `Good Morning ${superman}`
 
 
+let supermanname = document.getElementById("superman")
+supermanname.innerText = superman;
+let supermanemail = document.getElementById("supermanemail");
+supermanemail.innerText = email;
 
-
+let supermanmobile = document.getElementById("supermanmobile");
+supermanmobile.innerText = mobilenum;
 
 
 
@@ -84,4 +102,5 @@ let swa=document.getElementById("buter");
 
 swa.addEventListener("click", ()=>{
     window.location =("../index.html")
+    localStorage.remove("details")
 });

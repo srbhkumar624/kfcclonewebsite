@@ -11,9 +11,15 @@ footer1.innerHTML = footer();
 
 let checker = JSON.parse(localStorage.getItem("location")) || []
 let picknik = JSON.parse(localStorage.getItem("pic")) || []
+let details = JSON.parse(localStorage.getItem("details")) || []
 
 
-
+let superman = ""
+details.map(function(el)
+{
+  superman = el.name
+ 
+})
 
 
 
@@ -115,7 +121,7 @@ let id ;
     img1.setAttribute("class", "img1")
     let divv = document.createElement("div")
     let h1 = document.createElement("h1")
-    h1.innerText = "WELCOME BACK, UTKARSH!";
+    h1.innerText = `Welcome back ${superman}`;
     let h3 = document.createElement("p");
     h3.innerText = "My Acoount ------>"
     let img2 = document.createElement("img");
@@ -145,31 +151,31 @@ let id ;
                    },
 
                    {img:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT115.jpg?ver=14.67",
-                   title:"Match Of the Day",
+                   title:"CHICKEN BUCKETS",
                   
                   },
                   {img:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT116.jpg?ver=14.67",
-                    title:"Match Of the Day",
+                    title:"BIRYANI BUCKETS",
                    
                    },
                    {img:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT84.jpg?ver=14.67",
-                    title:"Match Of the Day",
+                    title:"BOX MEALS",
                    
                    },
                    {img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=14.67",
-                    title:"Match Of the Day",
+                    title:"BURGERS",
                    
                    },
                    {img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT189.jpg?ver=14.67",
-                    title:"Match Of the Day",
+                    title:"STAY HOME SPECIALS",
                    
                    },
                    {img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT175.jpg?ver=14.67",
-                    title:"Match Of the Day",
+                    title:"SNACKS",
                    
                    },
                    {img: "https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg",
-                    title:"Match Of the Day",
+                    title:"VIEW ALL ",
                    
                    },
 

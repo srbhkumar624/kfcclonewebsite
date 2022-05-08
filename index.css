@@ -5,7 +5,6 @@
     font-family: 'Oswald', sans-serif;
     margin: 0%;
     padding: 0%;
-    overflow: hidden;
 }
 li a{
     color: white;
@@ -45,7 +44,7 @@ li a{
 }
 .kfc-posters{
     cursor: pointer;
-    height: 400px;
+    height: 380px;
 }
 .threeLines {
     width: 50px;

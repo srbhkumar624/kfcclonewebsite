@@ -5,6 +5,7 @@ foot.innerHTML=footer();
 head.innerHTML=navbar();
 
 let add_to_cart = JSON.parse(localStorage.getItem("addtoCart")) || [];
+let chuk  = JSON.parse(localStorage.getItem("order")) || []
 let match_day = [
     {
         image: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33781-0.jpg?ver=14.56",
@@ -605,7 +606,9 @@ match_day.forEach((el) => {
 })
 function addtocart(el) {
     add_to_cart.push(el);
+    chuk.push(el);
     localStorage.setItem("addToCart", JSON.stringify(add_to_cart));
+    localStorage.setItem("order", JSON.stringify(chuk));
 
 
     // ********************************Storing data to add to cart*****************************

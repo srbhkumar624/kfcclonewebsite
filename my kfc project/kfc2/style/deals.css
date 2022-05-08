@@ -117,7 +117,7 @@ h1{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     background-image: url("https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/CHKZINGER.jpg");
-    background-size: 190px 200px;
+    background-size: 255px 200px;
 }
 #h1_1{
     color: #e4002b;
@@ -386,6 +386,9 @@ input{
     /* border: 1px solid red; */
     width: 100%;
     overflow: scroll;
+}
+#Acc a{
+    color: black;
 }
 
 

@@ -1,3 +1,3 @@
 # kfcclonewebsite
-blog link:https://medium.com/@srbhkumar623/collaborative-project-work-6fd22520a1d9
+blog link:https://medium.com/@rajibul_fp01_192/collaborative-project-work-66db81d6b347
 repo link:https://github.com/srbhkumar624/kfcclonewebsite.git
